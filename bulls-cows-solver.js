@@ -61,7 +61,7 @@
 				}
 			}
 		}
-		return a+'A'+b+'B';
+		return a+'Б'+b+'К';
 	}
     return function(filter){
 		if (!(filter instanceof Array)) {
