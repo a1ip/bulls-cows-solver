@@ -13,7 +13,7 @@
 }(this, function() {
 	'use strict';
 	var candidates_all=[];
-	for (var n0 = 123; n0 <= 9876; n0++) {
+	for (var n0 = 1234; n0 <= 9876; n0++) {
 		var n = ('0'+n0).substr(-4), valid = true;
 		for (var i = 0; i < 3; i++) {
 			var c = n.charAt(i);
@@ -29,10 +29,10 @@
 
 	var isValidInput = function(guess, result) {
 		var validResults = [
-			'0A0B', '0A1B', '0A2B', '0A3B', '0A4B',
-			'1A0B', '1A1B', '1A2B', '1A3B',
-			'2A0B', '2A1B', '2A2B', '3A0B',
-			'4A0B',
+			'0Б0К', '0Б1К', '0Б2К', '0Б3К', '0Б4К',
+			'1Б0К', '1Б1К', '1Б2К', '1Б3К',
+			'2Б0К', '2Б1К', '2Б2К', '3Б0К',
+			'4Б0К',
 		];
 		if (!/^\d{4}$/.test(guess)) {
 			return false;
