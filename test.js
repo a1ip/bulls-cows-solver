@@ -2,7 +2,7 @@ console.log();
 var bulls_cows_solver = require('./bulls-cows-solver.js');
 QUnit.test("Test", function(assert) {
 	assert.deepEqual(bulls_cows_solver([
-			{guess:'1234', result:'1A3B'},
+			{guess:'1234', result:'1Б3К'},
 		]),
 		[ '1342', '1423', '2314', '2431', '3124', '3241', '4132', '4213' ]
 	);
@@ -15,9 +15,9 @@ QUnit.test("Invalid Input Detection", function(assert) {
 	assert.throws(
 		function(){
 			bulls_cows_solver([
-				{guess:'1234', result:'1A3B'},
+				{guess:'1234', result:'1Б3К'},
 				{guess:'32a9',},
-				{guess:'3234', result:'1A3B'},
+				{guess:'3234', result:'1Б3К'},
 			]);
 		},
 		/Input 2 is invalid./,
@@ -26,9 +26,9 @@ QUnit.test("Invalid Input Detection", function(assert) {
 	assert.throws(
 		function(){
 			bulls_cows_solver([
-				{guess:'1234', result:'1A3B'},
-				{guess:'32a9', result:'0A0B'},
-				{guess:'3234', result:'1A3B'},
+				{guess:'1234', result:'1Б3К'},
+				{guess:'32a9', result:'0Б0К'},
+				{guess:'3234', result:'1Б3К'},
 			]);
 		},
 		/Input 2 is invalid./,
@@ -37,9 +37,9 @@ QUnit.test("Invalid Input Detection", function(assert) {
 	assert.throws(
 		function(){
 			bulls_cows_solver([
-				{guess:'1234', result:'1A3B'},
-				{guess:'678', result:'0A0B'},
-				{guess:'3234', result:'1A3B'},
+				{guess:'1234', result:'1Б3К'},
+				{guess:'678', result:'0Б0К'},
+				{guess:'3234', result:'1Б3К'},
 			]);
 		},
 		/Input 2 is invalid./,
@@ -48,9 +48,9 @@ QUnit.test("Invalid Input Detection", function(assert) {
 	assert.throws(
 		function(){
 			bulls_cows_solver([
-				{guess:'1234', result:'1A3B'},
-				{guess:'67890', result:'0A0B'},
-				{guess:'3234', result:'1A3B'},
+				{guess:'1234', result:'1Б3К'},
+				{guess:'67890', result:'0Б0К'},
+				{guess:'3234', result:'1Б3К'},
 			]);
 		},
 		/Input 2 is invalid./,
@@ -59,10 +59,10 @@ QUnit.test("Invalid Input Detection", function(assert) {
 	assert.throws(
 		function(){
 			bulls_cows_solver([
-				{guess:'1234', result:'1A3B'},
-				{guess:'5678', result:'0A0B'},
-				{guess:'3234', result:'1A3B'},
-				{guess:'1234', result:'1A3B'},
+				{guess:'1234', result:'1Б3К'},
+				{guess:'5678', result:'0Б0К'},
+				{guess:'3234', result:'1Б3К'},
+				{guess:'1234', result:'1Б3К'},
 			]);
 		},
 		/Input 3 is invalid./,
@@ -71,9 +71,9 @@ QUnit.test("Invalid Input Detection", function(assert) {
 	assert.throws(
 		function(){
 			bulls_cows_solver([
-				{guess:'1234', result:'1A3B'},
-				{guess:'1234', result:'1A4B'},
-				{guess:'1234', result:'2A1B'},
+				{guess:'1234', result:'1Б3К'},
+				{guess:'1234', result:'1Б4К'},
+				{guess:'1234', result:'2Б1К'},
 			]);
 		},
 		/Input 2 is invalid./,
@@ -82,9 +82,9 @@ QUnit.test("Invalid Input Detection", function(assert) {
 	assert.throws(
 		function(){
 			bulls_cows_solver([
-				{guess:'1234', result:'1A3B'},
-				{guess:'4234', result:'1A4B'},
-				{guess:'1234', result:'2A1B'},
+				{guess:'1234', result:'1Б3К'},
+				{guess:'4234', result:'1Б4К'},
+				{guess:'1234', result:'2Б1К'},
 			]);
 		},
 		/Input 2 is invalid./,
