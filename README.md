@@ -1,7 +1,7 @@
-Bulls and Cows Solver
-=====================
+Калькулятор для игры «быки и коровы»
+====================================
 
-Get all the possible answers for Bulls and Cows game, based on the history of guesses in one round.
+Считает все возможные ответы для игры «быки и коровы», основываясь на истории попыток угадывания.
 
 Web based example can be launched from [https://frank-deng.github.io/bulls-cows-solver/index.html](https://frank-deng.github.io/bulls-cows-solver/index.html).
 
