@@ -12,19 +12,12 @@
 	}
 }(this, function() {
 	'use strict';
-	var candidates_all=[];
-	for (var n0 = 1023; n0 <= 9876; n0++) {
-		var n = ('0'+n0).substr(-4), valid = true;
-		for (var i = 0; i < 3; i++) {
-			var c = n.charAt(i);
-			if (n.indexOf(c) != n.lastIndexOf(c)) {
-				valid = false;
-				break;
-			}
-		}
-		if (valid) {
+	const candidates_all = [];
+	for (let n0 = 1023; n0 <= 9876; n0++) {
+		const n = '' + n0;
+	        if ([...new Set(n)].length === 4) {
 			candidates_all.push(n);
-		}
+	        }
 	}
 
 	var isValidInput = function(guess, result) {
