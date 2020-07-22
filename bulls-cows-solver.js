@@ -13,7 +13,7 @@
 }(this, function() {
 	'use strict';
 	var candidates_all=[];
-	for (var n0 = 1234; n0 <= 9876; n0++) {
+	for (var n0 = 1023; n0 <= 9876; n0++) {
 		var n = ('0'+n0).substr(-4), valid = true;
 		for (var i = 0; i < 3; i++) {
 			var c = n.charAt(i);
